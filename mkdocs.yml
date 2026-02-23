@@ -1,0 +1,57 @@
+site_name: "Capacitación ALMA"
+site_description: "Wiki local para flujogramas, manuales y lineamientos del Hospital de Ovalle"
+docs_dir: wiki/docs
+site_dir: wiki/site
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.expand
+    - navigation.sections
+    - navigation.path
+    - toc.follow
+    - content.code.copy
+    - search.highlight
+    - search.share
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+  - toc:
+      permalink: true
+nav:
+  - Inicio: index.md
+  - Capacitación:
+      - Plan general: capacitacion/plan.md
+  - Flujogramas:
+      - Guía general: Flujograma/README.md
+      - Instrucciones: Flujograma/INSTRUCCIONES.md
+      - Plantilla base:
+          - README: Flujograma/_plantilla/README.md
+          - Documentación: Flujograma/_plantilla/documentacion.md
+          - Diagrama: Flujograma/_plantilla/flujograma.md
+      - Admisión Hospitalizado:
+          - README: Flujograma/admision-hospitalizado/README.md
+          - Documentación: Flujograma/admision-hospitalizado/documentacion.md
+          - Flujograma vertical: Flujograma/admision-hospitalizado/flujograma.md
+          - Flujograma horizontal: Flujograma/admision-hospitalizado/flujograma-horizontal.md
+  - Manuales:
+      - Admisión Hospitalizado (MD): "Manuales PDF/23MEUI_HOS_Admisi_n_Hospitalizado.md"
+      - Enfermería Hospitalizado (MD): "Manuales PDF/23MEUI_HOS_Enfermer_a_Hospitalizado.md"
+      - Gestión de Camas (MD): "Manuales PDF/23MEUI_HOS_Gesti_n_de_Camas.md"
+      - Matrona Hospitalizado GO (MD): "Manuales PDF/23MEUI_HOS_Matrona_Hospitalizado_GO.md"
+      - Médico Hospitalizado (MD): "Manuales PDF/23MEUI_HOS_M_dico_Hospitalizado.md"
+      - Situación Actual Cirugía Ovalle (MD): "Manuales PDF/25_09_25_Situacion_Actual_Cirugia_Ovalle_Acta_V2.md"
+      - Admisión Hospitalizado (PDF): "Manuales PDF/23MEUI [HOS] Admisión Hospitalizado.pdf"
+      - Enfermería Hospitalizado (PDF): "Manuales PDF/23MEUI [HOS] Enfermería Hospitalizado.pdf"
+      - Gestión de Camas (PDF): "Manuales PDF/23MEUI [HOS] Gestión de Camas .pdf"
+      - Matrona Hospitalizado GO (PDF): "Manuales PDF/23MEUI [HOS] Matrona Hospitalizado GO.pdf"
+      - Médico Hospitalizado (PDF): "Manuales PDF/23MEUI [HOS] Médico Hospitalizado.pdf"
+      - Acta Cirugía Ovalle (PDF): "Manuales PDF/25-09-25 - Situacion Actual Cirugia Ovalle - Acta V2.pdf"
+  - Normas gráficas: normas.md
